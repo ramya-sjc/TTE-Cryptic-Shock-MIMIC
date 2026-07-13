@@ -1,0 +1,10 @@
+# Never commit raw MIMIC-IV data (PhysioNet DUA compliance)
+*.csv
+*.parquet
+data/
+*.db
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+.ipynb_checkpoints/
