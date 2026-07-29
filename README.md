@@ -20,17 +20,20 @@ This project first **replicates** the design and analysis of a recently publishe
 
 ```
 .
-├── README.md                 # this file
-├── PROTOCOL.md                # full target trial protocol (7 components + analysis plan)
-├── sql/                        # cohort extraction queries (Phase 2, pending data access)
+├── README.md                  # this file
+├── PROTOCOL.md                 # full target trial protocol (7 components + analysis plan)
+├── scripts/
+│   └── build_cohort_demo.py    # cohort-extraction prototype, run against the open MIMIC-IV Demo
+├── sql/                        # cohort extraction queries (Phase 2, pending full data access)
 │   └── (to be added)
 ├── analysis/                   # R scripts: propensity scores, IPTW, survival analysis (Phase 3-4)
 │   └── (to be added)
 ├── report/                     # final rendered report, tables, figures (Phase 6)
 │   └── (to be added)
 └── docs/
-    └── literature/              # annotated notes on cited papers
-        └── (to be added)
+    ├── literature/              # annotated notes on cited papers
+    │   └── (to be added)
+    └── demo_dataset_notes.md    # what the demo prototype validates vs. what's still simplified
 ```
 
 ---
@@ -39,13 +42,14 @@ This project first **replicates** the design and analysis of a recently publishe
 
 - [x] **Phase 0 — Setup:** PhysioNet account created; CITI "Data or Specimens Only Research" training in progress
 - [x] **Phase 1 — Protocol:** Target trial protocol drafted and version-controlled (`PROTOCOL.md`, v1.0, 2026-07-13)
-- [ ] **Phase 2 — Cohort extraction:** SQL cohort-building against MIMIC-IV (BigQuery), pending credentialed access approval
+- [x] **Phase 2 (prototype) — Cohort extraction logic validated** against the openly-available MIMIC-IV Clinical Database Demo (100 patients, no credentialing required) — see `scripts/build_cohort_demo.py` and `docs/demo_dataset_notes.md`
+- [ ] **Phase 2 (full) — Cohort extraction:** same logic re-run against full MIMIC-IV (BigQuery), pending credentialed access approval
 - [ ] **Phase 3 — Trial emulation design:** Strategy assignment, immortal-time-bias handling (cloning/censoring/weighting)
 - [ ] **Phase 4 — Statistical analysis:** IPTW, weighted Cox model, balance diagnostics
 - [ ] **Phase 5 — Sensitivity & extension analysis:** Robustness checks + original negative-control (or alternative) analysis
 - [ ] **Phase 6 — Report & write-up:** Final reproducible report (Quarto/R Markdown → PDF/HTML)
 
-Current blocker: none — proceeding through PhysioNet credentialing while Phase 1 documentation is finalized.
+Current blocker: PhysioNet credentialing application still awaiting manual review (appealed to credentialing@physionet.org). Cohort-extraction pipeline is being built and validated now against the open MIMIC-IV Demo so no time is lost waiting.
 
 ---
 
