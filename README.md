@@ -1,10 +1,10 @@
 # Target Trial Emulation: Vasopressor Timing in Cryptic Shock (MIMIC-IV)
 
-**Status: In Progress — Phase 1 (Protocol complete, PhysioNet credentialing underway)**
+**Status: In Progress - Phase 1 (Protocol complete, PhysioNet credentialing underway)**
 
 A real-world evidence (RWE) study replicating and extending a February 2026 published target trial emulation, using ICU electronic health record data (MIMIC-IV) to estimate the causal effect of early vs. delayed vasopressor initiation on 28-day mortality in patients with "Cryptic Shock" (severe tissue hypoperfusion despite normal blood pressure).
 
-Built as a portfolio project applying pharmacoepidemiology and causal inference methods to real-world clinical data — the same methodological framework used by real-world evidence teams in pharmaceutical and healthcare settings.
+Built as a portfolio project applying pharmacoepidemiology and causal inference methods to real-world clinical data - the same methodological framework used by real-world evidence teams in pharmaceutical and healthcare settings.
 
 ---
 
@@ -55,7 +55,7 @@ Current blocker: PhysioNet credentialing application still awaiting manual revie
 
 ## Data access
 
-This project uses **MIMIC-IV v3.1**, a restricted-access, de-identified ICU database hosted on [PhysioNet](https://physionet.org), requiring individual credentialed access (CITI training + signed Data Use Agreement). Per PhysioNet's data use terms, raw data is never included in this repository — only code, protocol documents, and de-identified/aggregated outputs (tables, figures, summary statistics) will be published once analysis is complete.
+This project uses **MIMIC-IV v3.1**, a restricted-access, de-identified ICU database hosted on [PhysioNet](https://physionet.org), requiring individual credentialed access (CITI training + signed Data Use Agreement). Per PhysioNet's data use terms, raw data is never included in this repository - only code, protocol documents, and de-identified/aggregated outputs (tables, figures, summary statistics) will be published once analysis is complete.
 
 ---
 
