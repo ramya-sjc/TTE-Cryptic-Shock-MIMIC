@@ -1,5 +1,6 @@
 # Never commit raw MIMIC-IV data (PhysioNet DUA compliance)
-*.csv
+data/*.csv
+data/**/*.csv
 *.parquet
 data/
 *.db
@@ -8,3 +9,6 @@ data/
 .Rproj.user/
 __pycache__/
 .ipynb_checkpoints/
+
+# Small aggregate result tables (not patient-level data) are fine to track:
+!report/*.csv
